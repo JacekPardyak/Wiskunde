@@ -1,0 +1,24 @@
+project:
+  type: book
+
+book:
+  title: "Holenderskie egzaminy końcowe z matematyki"
+  author: "Jacek"
+  chapters:
+    - index.qmd
+    - sources/VMBO-BB.qmd
+
+format:
+  pdf:
+    documentclass: scrreprt
+    toc: true
+    toc-title: "Spis treści"
+    toc-depth: 3
+    number-sections: true
+    number-depth: 3
+    colorlinks: true
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=2.5cm
+      - right=2.5cm

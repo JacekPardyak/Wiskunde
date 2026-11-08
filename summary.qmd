@@ -1,0 +1,160 @@
+---
+title: "summary"
+format: html
+---
+
+```{r}
+#| echo: false
+library(tidyverse)
+folder <- "files/2024/"
+df <- tribble(
+  ~szkola, ~kod, ~rok,  ~sesja, ~dokument,
+  "BB", "0153", 21, 1, "c",
+  "GT", "0153", 21, 2, "o",
+  "VW", "1024", 21, 2, "c",
+  
+  # rok 2024
+  # Wiskunde vmbo bb in 2024
+  "BB", "0153", 24, 1, "o",
+  "BB", "0153", 24, 1, "c",
+  # Wiskunde vmbo kb in 2024
+  "KB", "0153", 24, 1, "o",
+  "KB", "0153", 24, 1, "u",
+  "KB", "0153", 24, 1, "c",
+  # Wiskunde vmbo gl en tl in 2024
+  "GT", "0153", 24, 1, "o",
+  "GT", "0153", 24, 1, "u",
+  "GT", "0153", 24, 1, "c", # ma osobne uzupełnienie
+  "GT", "0153", 24, 2, "o",
+  "GT", "0153", 24, 2, "u",
+  "GT", "0153", 24, 2, "c", # ma osobne uzupełnienie
+  # Wiskunde A havo in 2024
+  "HA", "1024", 24, 1, "o",
+  "HA", "1024", 24, 1, "u",
+  "HA", "1024", 24, 1, "c", # ma osobne uzupełnienie
+  "HA", "1024", 24, 2, "o",
+  "HA", "1024", 24, 2, "u",
+  "HA", "1024", 24, 2, "c", # ma osobne uzupełnienie
+  # Wiskunde B havo in 2024
+  "HA", "1025", 24, 1, "o",
+  "HA", "1025", 24, 1, "c",
+  "HA", "1025", 24, 2, "o",
+  "HA", "1025", 24, 2, "u",
+  "HA", "1025", 24, 2, "c", # ma osobne uzupełnienie
+  # Wiskunde A vwo in 2024
+  "VW", "1024", 24, 1, "o",
+  "VW", "1024", 24, 1, "u",
+  "VW", "1024", 24, 1, "c",
+  "VW", "1024", 24, 2, "o",
+  "VW", "1024", 24, 2, "u",
+  "VW", "1024", 24, 2, "c",
+  # Wiskunde B vwo in 2024
+  "VW", "1025", 24, 1, "o", # jest errata
+  "VW", "1025", 24, 1, "c",
+  "VW", "1025", 24, 2, "o",
+  "VW", "1025", 24, 2, "c",
+  # Wiskunde C vwo in 2024
+  "VW", "1026", 24, 1, "o",
+  "VW", "1026", 24, 1, "u",
+  "VW", "1026", 24, 1, "c",
+  "VW", "1026", 24, 2, "o",
+  "VW", "1026", 24, 2, "u",
+  "VW", "1026", 24, 2, "c",
+
+  
+) |> 
+  mutate(plik = glue::glue("{szkola}-{kod}-a-{rok}-{sesja}-{dokument}.pdf"),
+    istnieje = file.exists(file.path(folder, plik)),
+    link = sprintf('<a href="files/2024/%s" target="_blank">Otwórz PDF</a>', plik),)
+
+kody <- tribble(
+  ~szkola, ~kod, ~typ,
+  "BB", "0153", "Wiskunde VMBO BB",
+  "KB", "0153", "Wiskunde VMBO KB",
+  "GT", "0153", "Wiskunde VMBO GT en TL",
+  "HA", "1024", "Wiskunde A HAVO",
+  "HA", "1025", "Wiskunde B HAVO",
+  "VW", "1024", "Wiskunde A VWO",
+  "VW", "1025", "Wiskunde B VWO",
+  "VW", "1026", "Wiskunde C VWO",
+)
+
+df <- df |> left_join(kody)
+
+DT::datatable(
+  df,
+  rownames = FALSE,
+  escape = FALSE,
+  filter = "top",
+  options = list(
+    pageLength = 15,
+    lengthMenu = c(10, 15, 25, 50, 100),
+    autoWidth = TRUE,
+    order = list(list(2, "desc"))
+  ),
+  caption = "Egzaminy matematyczne – arkusze"
+)
+```
+
+```{mermaid}
+flowchart TD
+
+    A[Holenderskie egzaminy końcowe z matematyki]
+
+    A --> B[VMBO]
+    A --> C[HAVO]
+    A --> D[VWO]
+
+    B --> B1[BB]
+    B --> B2[KB]
+    B --> B3[GL i TL]
+
+    C --> C1[A]
+    C --> C2[B]
+    C --> C3[D]
+    
+    D --> D1[A]
+    D --> D2[B]
+    D --> D3[C]
+    D --> D4[D]
+
+    style B1 fill:#70AD47,color:white
+    style B2 fill:#70AD47,color:white
+    style C3 fill:#7030A0,color:white
+    style D4 fill:#7030A0,color:white
+```
+
+
+* VMBO - Voorbereidend Middelbaar Beroepsonderwijs - przygotowawcze szkolnictwo zawodowe z następującymi ścieżkami kształcenia:
+
+  + BB – Basisberoepsgerichte Leerweg - Podstawowa ścieżka zawodowa.[^1]
+  + KB – Kaderberoepsgerichte Leerweg - Rozszerzona ścieżka zawodowa.[^2]
+  + GL – Gemengde Leerweg - Ścieżka mieszana.
+  + TL – Theoretische Leerweg - Ścieżka teoretyczna.
+
+* HAVO - Hoger Algemeen Voortgezet Onderwijs - wyższe szkolnictwo ogólnokształcące z następującymi wariantami:
+
+  + Wiskunde A – matematyka stosowana
+  + Wiskunde B – matematyka zaawansowana
+  + Wiskunde D – matematyka dodatkowa[^3]
+
+* VWO  - Voorbereidend Wetenschappelijk Onderwijs - przygotowawcze szkolnictwo akademickie z następującymi wariantami:
+
+  + Wiskunde A – matematyka stosowana
+  + Wiskunde B – matematyka zaawansowana
+  + Wiskunde C – matematyka kontekstowa
+  + Wiskunde D – matematyka dodatkowa[^4] 
+
+[^1]: Od 2025 roku centralny egzamin cyfrowy w systemie Facet
+[^2]: Od 2025 roku centralny egzamin cyfrowy w systemie Facet
+[^3]: wyłącznie egzamin szkolny
+[^4]: wyłącznie egzamin szkolny.
+
+Pozostałe egzaminy centralne odbywają się jako egzaminy papierowe:
+
+* Wiskunde VMBO GL en TL
+* Wiskunde HAVO A
+* Wiskunde HAVO B
+* Wiskunde VWO A
+* Wiskunde VWO B
+* Wiskunde VWO C

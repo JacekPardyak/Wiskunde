@@ -1,0 +1,285 @@
+---
+title: "BB-0153-a-24-1-o"
+format:
+  pdf:
+    pdf-engine: lualatex
+header-includes:
+  - \usepackage{tikz}
+  - \usepackage{amsmath}
+  - \usepackage{amssymb}
+---
+
+# Instrukcje
+
+Odpowiedz na wszystkie pytania w tym zeszycie zadań.
+Egzamin składa się z 22 pytań. Za egzamin można uzyskać maksymalnie 58 punktów. Przy każdym numerze pytania podano liczbę punktów możliwych do zdobycia za poprawną odpowiedź.
+
+
+# Witraż
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \phantom{to jest }
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.85\textwidth}
+
+Widzisz okno wykonane techniką witrażową.
+
+\begin{center}
+    \includegraphics[width=\textwidth]{BB-0153-a-24-1-o-1.png}
+\end{center}
+
+\end{minipage}
+
+<!-- zadanie 1 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{1} \textit{2 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Jakie figury geometryczne rozpoznajesz w tym oknie? Zaznacz krzyżykiem pra-widłowe odpowiedzi. Możliwych jest kilka odpowiedzi.
+
+\vspace{5mm}
+
+\square \phantom{to} trójkąt 
+
+\square \phantom{to} sześcian
+
+\square \phantom{to} graniastosłup
+
+\square \phantom{to} prostokąt
+
+\square \phantom{to} kwadrat
+
+
+\end{minipage}
+
+<!-- zadanie 2 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{2} \textit{2 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Rachid chce wykonać symetryczne dzieło sztuki ze szkła witrażowego. Widzisz szkic dzieła, które Rachid zamierza wykonać. Narysuj wszystkie osie symetrii tego dzieła.
+
+\vspace{5mm}
+
+\begin{tikzpicture}[scale=0.8, line width=1pt]
+
+  % Główny zewnętrzny kwadrat 6x6
+  \draw (0,0) rectangle (6,6);
+
+  % Zewnętrzna ramka (odstęp 1 cm od brzegów)
+  \draw (0,1) -- (6,1);
+  \draw (0,5) -- (6,5);
+  \draw (1,0) -- (1,6);
+  \draw (5,0) -- (5,6);
+
+  % Środkowa ramka (odstęp 1.5 cm od brzegów)
+  \draw (1,2) -- (5,2);
+  \draw (1,4) -- (5,4);
+  \draw (1.5,1) -- (1.5,5);
+  \draw (4.5,1) -- (4.5,5);
+
+  % Przekątne w samym środku (prostokąt 2x2 od (2,2) do (4,4))
+  \draw (1.5,2) -- (4.5,4);
+  \draw (1.5,4) -- (4.5,2);
+
+\end{tikzpicture}
+    
+\end{minipage}
+
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+\phantom{to jest }
+
+    \end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Środek dzieła Rachida składa się z czterech trójkątów równoramiennych. Rachid chce wykonać dwa trójkąty z szarego szkła i dwa z białego szkła.
+
+\vspace{5mm}
+
+\begin{tikzpicture}[scale=0.8, line width=1pt]
+
+  % Górny trójkąt
+  \fill[gray!30] (1.5,4) -- (4.5,4) -- (3,3) -- cycle;
+
+  % Dolny trójkąt
+  \fill[gray!30] (1.5,2) -- (4.5,2) -- (3,3) -- cycle;
+
+  % Zewnętrzny prostokąt
+  \draw (1.5,2) rectangle (4.5,4);
+
+  % Przekątne
+  \draw (1.5,2) -- (4.5,4);
+  \draw (1.5,4) -- (4.5,2);
+
+  % Oznaczenia wierzchołków
+  \node[below left] at (1.5,2) {$A$};
+  \node[below right] at (4.5,2) {$B$};
+  \node[above right] at (4.5,4) {$C$};
+  \node[above left] at (1.5,4) {$D$};
+
+  % Kąt przy wierzchołku C
+  \draw (4.5,3.6) arc[start angle=270,end angle=213.69,radius=0.4];
+  \node at (4.1,3.3) {$56^\circ$};
+
+  % Kąt przy środku
+  \draw (3,3) ++(-33.69:0.4)
+        arc[start angle=-33.69,end angle=33.69,radius=0.4];
+  \node at (3.55,3) {$?$};
+
+  % Wymiar dolny - 30 cm
+  \draw[<->] (1.5,1.55) -- (4.5,1.55);
+  \node[below] at (3,1.55) {$30\ \text{cm}$};
+
+  % Wymiar prawy - 20 cm
+  \draw[<->] (4.9,2) -- (4.9,4);
+  \node[right] at (4.9,3) {$20\ \text{cm}$};
+
+\end{tikzpicture}
+    
+\end{minipage}
+
+<!-- zadanie 3 -->
+
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{3} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Oblicz, ile cm² wynosi łączne pole powierzchni dwóch szarych trójkątów w dziele Rachida. Zapisz obliczenia.
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\end{minipage}
+
+<!-- zadanie 4 -->
+
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{4} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Oblicz, ile stopni ma kąt oznaczony znakiem zapytania. Zapisz obliczenia.
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\end{minipage}
+
+<!-- zadanie 5 -->
+
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{5} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Rachid chce również wykonać drewnianą ramę do swojego dzieła. 
+
+\vspace{5mm}
+
+\begin{tikzpicture}[scale=0.8, line width=1pt]
+
+  % Główny zewnętrzny kwadrat 6x6
+  \draw (0,0) rectangle (6,6);
+
+  % Zewnętrzna ramka (odstęp 1 cm od brzegów)
+  \draw (0,1) -- (6,1);
+  \draw (0,5) -- (6,5);
+  \draw (1,0) -- (1,6);
+  \draw (5,0) -- (5,6);
+
+  % Środkowa ramka (odstęp 1.5 cm od brzegów)
+  \draw (1,2) -- (5,2);
+  \draw (1,4) -- (5,4);
+  \draw (1.5,1) -- (1.5,5);
+  \draw (4.5,1) -- (4.5,5);
+
+  % Przekątne w samym środku (prostokąt 2x2 od (2,2) do (4,4))
+  \draw (1.5,2) -- (4.5,4);
+  \draw (1.5,4) -- (4.5,2);
+
+  % Wymiar górny - 10 cm
+  \draw[<->] (0,6.6) -- (1,6.6);
+  \node[above] at (0.5,6.6) {$10\ \text{cm}$};
+
+  % Wymiar górny - 20 cm
+  \draw[<->] (1,6.6) -- (5,6.6);
+  \node[above] at (3,6.6) {$20\ \text{cm}$};
+
+  % Wymiar górny - 10 cm
+  \draw[<->] (5,6.6) -- (6,6.6);
+  \node[above] at (5.5,6.6) {$10\ \text{cm}$};
+  
+  % Wymiar prawy - 10 cm
+  \draw[<->] (6.6,5) -- (6.6,6);
+  \node[right] at (6.6,5.5) {$10\ \text{cm}$};
+  
+  % Wymiar prawy - 20 cm
+  \draw[<->] (6.6,1) -- (6.6,5);
+  \node[right] at (6.6,3) {$20\ \text{cm}$};
+  
+  % Wymiar prawy - 10 cm
+  \draw[<->] (6.6,0) -- (6.6,1);
+  \node[right] at (6.6,0.5) {$10\ \text{cm}$};
+  
+\end{tikzpicture}
+
+\vspace{5mm}
+
+Rachid ma 230 cm drewna.
+Czy Rachid ma wystarczającą ilość drewna, aby wykonać ramę? Uzasadnij odpowiedź obliczeniami.
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\end{minipage}
+
+
