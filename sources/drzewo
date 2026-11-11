@@ -1,0 +1,45 @@
+<!-- mężczyzna i drzewo -->
+
+
+\begin{tikzpicture}[scale=0.8, line width=1pt]
+
+  % Mężczyzna wysokość 1.85 m, szerokość 0.5 m
+  \draw (0,0) rectangle (0.5,1.85);
+  
+  % Drzewo wysokość 10.25 m, szerokość 8.9 m
+  \draw (3,0) rectangle (11.9,10.25);
+  
+  % Wymiar mężczyzny
+  \draw[<->] (-0.3,0) -- (-0.3,1.85);
+  \node[align=center] at (-1.6,0.925)
+    {wysokość\\mężczyzny};
+
+  % Wymiar drzewa
+  \draw[<->] (12.2,0) -- (12.2,10.25);
+  \node[align=center] at (13.6,5.125)
+    {wysokość\\drzewa\\do\\pierwszych\\gałęzi};
+
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[scale=0.8, line width=1pt]
+
+  % Mężczyzna wysokość 1.85 m, szerokość 0.5 m
+  % Wyśrodkowany względem drzewa
+  \draw (7.2,0) rectangle (7.7,1.85);
+  
+  % Drzewo wysokość 10.25 m, szerokość 8.9 m
+  \draw (3,0) rectangle (11.9,10.25);
+  
+  % Wymiar mężczyzny
+  \draw[<->] (6.9,0) -- (6.9,1.85);
+  \node[align=center] at (5.6,0.925)
+    {wysokość\\mężczyzny};
+
+  % Wymiar drzewa
+  \draw[<->] (12.2,0) -- (12.2,10.25);
+  \node[align=center] at (13.6,5.125)
+    {wysokość\\drzewa\\do\\pierwszych\\gałęzi};
+
+\end{tikzpicture}
+

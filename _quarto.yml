@@ -7,9 +7,12 @@ book:
   chapters:
     - index.qmd
     - sources/VMBO-BB.qmd
+    - sources/VMBO-KB.qmd
 
 format:
   pdf:
+    header-includes:
+      - \usepackage{pdfpages}
     documentclass: scrreprt
     toc: true
     toc-title: "Spis treści"

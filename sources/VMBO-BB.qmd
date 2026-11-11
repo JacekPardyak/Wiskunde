@@ -10,10 +10,13 @@ treść`
 
 treść
 
+\includepdf[pages=-, fitpaper=true, pagecommand={\thispagestyle{plain}}]{sources/BB-0153-a-24-1-o.pdf}
+
 ## Modele oceny
 
 treść
 
 ### Rok 2024 (Sesja 1)
 
-treść
+\includepdf[pages=-, fitpaper=true, pagecommand={\thispagestyle{plain}}]{sources/BB-0153-a-24-1-c.pdf}
+

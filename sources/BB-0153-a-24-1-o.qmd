@@ -7,13 +7,16 @@ header-includes:
   - \usepackage{tikz}
   - \usepackage{amsmath}
   - \usepackage{amssymb}
+  - \usepackage{titlesec}
+  - \titleformat{\section}{\normalfont\Large\bfseries\centering}{\thesection}{1em}{}
+  - \pagenumbering{gobble}
 ---
 
 # Instrukcje
 
 Odpowiedz na wszystkie pytania w tym zeszycie zadań.
 Egzamin składa się z 22 pytań. Za egzamin można uzyskać maksymalnie 58 punktów. Przy każdym numerze pytania podano liczbę punktów możliwych do zdobycia za poprawną odpowiedź.
-
+Egzamin trwa 90 minut.
 
 # Witraż
 
@@ -281,5 +284,816 @@ Czy Rachid ma wystarczającą ilość drewna, aby wykonać ramę? Uzasadnij odpo
 \noindent\dotfill
 
 \end{minipage}
+
+# Największe drzewo
+
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \phantom{to jest }
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+W Ameryce znajduje się największe drzewo na świecie. Przydomek tego drzewa to General Sherman. Widzisz zdjęcie drzewa, a przed nim dorosłego mężczyznę.
+
+\vspace{5mm}
+
+\noindent
+\begin{minipage}[c]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{BB-0153-a-24-1-o-2.png}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.48\textwidth}
+    \centering
+\begin{tikzpicture}[scale=0.8, line width=1pt]
+
+  % Postać mężczyzny (wysokość 1.85 m, wyśrodkowana na x = 7.45)
+  % Głowa
+  \draw (7.45, 1.7) circle (0.15);
+  % Tułów
+  \draw (7.45, 1.55) -- (7.45, 0.9);
+  % Ręce
+  \draw (7.25, 1.25) -- (7.65, 1.25);
+  % Nogi
+  \draw (7.45, 0.9) -- (7.3, 0);
+  \draw (7.45, 0.9) -- (7.6, 0);
+  
+  % Pień drzewa (wysokość 10.25 m, podstawa od 3 do 11.9)
+  \draw (3,0) .. controls (4,0.5) and (4.5,3) .. (4.8,10.25) 
+        -- (10.1,10.25) 
+        .. controls (10.4,3) and (10.9,0.5) .. (11.9,0) -- cycle;
+  
+  % Wymiar mężczyzny
+  \draw[<->] (6.9,0) -- (6.9,1.85);
+  \node[align=center] at (5.6,0.925)
+    {wysokość\\mężczyzny};
+
+  % Wymiar drzewa
+  \draw[<->] (9.2,0) -- (9.2,10.25);
+  \node[align=center] at (7.8,5.125)
+    {wysokość\\drzewa\\do\\pierwszych\\gałęzi};
+
+\end{tikzpicture}
+\end{minipage}
+
+\end{minipage}
+
+
+<!-- zadanie 6 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{6} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Oszacuj, ile metrów wysokości ma drzewo do pierwszych gałęzi. Pokaż, w jaki sposób doszedłeś do odpowiedzi.
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\end{minipage}
+
+<!-- zadanie 7 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{7} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Grupa dzieci staje wokół drzewa. Obwód pnia na wysokości ramion dzieci wynosi 28 metrów. Zakładamy, że dwoje dzieci stojących ramię w ramię zajmuje łącznie 80 cm szerokości. 
+
+\begin{center}
+    \includegraphics[width=\textwidth]{BB-0153-a-24-1-o-3.png}
+\end{center}
+
+Oblicz, ile dzieci co najmniej może stanąć ramię w ramię dookoła tego drzewa. Zapisz obliczenia.
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\end{minipage}
+
+<!-- zadanie 8 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{8} \textit{2 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Zakładamy, że drzewo ma w tym roku 2500 lat. Zaznacz strzałką na osi czasu, kiedy
+drzewo wyrosło. Uzasadnij odpowiedź.
+
+\begin{center}
+    \includegraphics[width=\textwidth]{BB-0153-a-24-1-o-4.png}
+\end{center}
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\end{minipage}
+
+
+# Brodzik dla małych dzieci
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \phantom{to jest }
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+W brodziku na basenie znajduje się fontanna w kształcie drzewa, na którym siedzą ptaki. Z dzioba
+każdego ptaka tryska strumień wody.
+
+\begin{center}
+    \includegraphics[width=\textwidth]{BB-0153-a-24-1-o-5.png}
+\end{center}
+
+Wysokość jednego ze strumieni można obliczyć za pomocą wzoru słownego:
+
+$$\mathit{wysokość} = 2 - 0{,}5 \times \mathit{odległość} \times \mathit{odległość}$$
+
+Gdzie $\mathit{wysokość}$ oznacza wysokość strumienia wody w metrach ponad powierzchnią wody, a $\mathit{odległość}$ – poziomą odległość strumienia od dzioba, w metrach.
+
+
+\end{minipage}
+
+
+<!-- zadanie 9 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{9} \textit{1 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Pokaż za pomocą obliczeń, że w $\mathit{odległości}$ 1,2 metra $\mathit{wysokość}$ strumienia wody
+wynosi 1,28 metra.
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\end{minipage}
+
+
+<!-- zadanie 10 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{10} \textit{1 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Oblicz, że w $\mathit{odległości}$ 2 metrów strumień wody dociera do powierzchni wody. Zapisz obliczenia.
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\end{minipage}
+
+<!-- zadanie 11 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{11} \textit{4 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Narysuj wykres odpowiadający temu wzorowi słownemu. Najpierw uzupełnij tabelę.
+Podaj wyniki z dokładnością do dwóch miejsc po przecinku.
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+$\mathit{odległość}$ (metry) & $0{,}0$ & $0{,}4$ & $0{,}8$ & $1{,}2$ & $1{,}6$ & $2{,}0$ \\ \hline
+$\mathit{wysokość}$ (metry)  &     &         &         & $1{,}28$ &        &     \\ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=\textwidth]{BB-0153-a-24-1-o-6.png}
+\end{center}
+
+\end{minipage}
+
+# Wentylator
+
+
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \phantom{to jest }
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Kyara ma w swoim pokoju wentylator. Widzisz zdjęcie wentylatora oraz schematyczne przedstawienie łopatek wentylatora.
+
+\vspace{5mm}
+
+\noindent
+\begin{minipage}[c]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{BB-0153-a-24-1-o-7.png}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.48\textwidth}
+    \centering
+    \begin{tikzpicture}[
+        scale=1.15,
+        line cap=round,
+        line join=round
+    ]
+
+    % Trzy łopatki wentylatora
+    \foreach \a in {0,120,240} {
+        \begin{scope}[rotate=\a]
+            \draw[line width=1.4pt, fill=white]
+                (-0.38,0.40)
+                .. controls (-0.85,0.70) and (-1.65,1.55)
+                .. (-0.35,1.72)
+                .. controls (0.30,1.78) and (0.95,1.35)
+                .. (0.55,0.98)
+                .. controls (0.35,0.78) and (0.08,0.82)
+                .. (-0.05,0.58)
+                -- cycle;
+        \end{scope}
+    }
+
+    % Zewnętrzny okrąg piasty
+    \draw[line width=1.4pt, fill=white]
+        (0,0) circle (0.55);
+
+    % Wewnętrzny okrąg piasty
+    \draw[line width=1.4pt, fill=white]
+        (0,0) circle (0.29);
+
+    \end{tikzpicture}
+\end{minipage}
+
+\end{minipage}
+
+<!-- zadanie 12 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{12} \textit{1 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Czy łopatki wentylatora są osiowosymetryczne? Zakreśl właściwą odpowiedź: 
+
+\vspace{5mm}
+\textbf{TAK} / \textbf{NIE}
+
+\vspace{5mm}
+
+\end{minipage}
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \phantom{to jest }
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Gdy łopatki wentylatora się obracają, tworzą koło o średnicy 30 cm. Wokół wentylatora znajduje się
+osłona (kratka). Odległość między łopatkami a kratką wynosi 2 cm.
+
+$$\mathit{obwód\ koła} = 3{,}14 \times \mathit{średnica}$$
+
+\vspace{5mm}
+
+
+\begin{tikzpicture}[
+    scale=0.85,
+    line cap=round,
+    line join=round,
+    >=latex
+]
+
+% Zewnętrzna osłona wentylatora
+\draw[line width=1.2pt] (0,0) circle (2.04);
+
+% Przerywany okrąg - średnica 30 cm
+\draw[line width=1.2pt, dashed] (0,0) circle (1.8);
+
+% Trzy łopatki wentylatora
+\foreach \a in {0,120,240} {
+    \begin{scope}[rotate=\a]
+        \draw[line width=1.4pt, fill=white]
+            (-0.38,0.40)
+            .. controls (-0.85,0.70) and (-1.65,1.55)
+            .. (-0.35,1.72)
+            .. controls (0.30,1.78) and (0.95,1.35)
+            .. (0.55,0.98)
+            .. controls (0.35,0.78) and (0.08,0.82)
+            .. (-0.05,0.58)
+            -- cycle;
+    \end{scope}
+}
+
+% Zewnętrzny okrąg piasty
+\draw[line width=1.4pt, fill=white]
+    (0,0) circle (0.55);
+
+% Wewnętrzny okrąg piasty
+\draw[line width=1.4pt, fill=white]
+    (0,0) circle (0.29);
+
+% Opis osłony - kratka
+\node[anchor=east] at (-2.65,-1.55) {kratka};
+
+\draw[line width=0.7pt]
+    (-2.60,-1.50) -- (-1.75,-1.05);
+
+% Linie pomocnicze dla wymiaru 30 cm
+\draw[dashed, line width=0.6pt]
+    (0,1.8) -- (2.65,1.8);
+
+\draw[dashed, line width=0.6pt]
+    (0,-1.8) -- (2.65,-1.8);
+
+% Wymiar 30 cm
+\draw[<->, line width=0.8pt]
+    (2.65,-1.8) -- (2.65,1.8);
+
+\node[anchor=west] at (2.85,0) {30 cm};
+
+% Linia pomocnicza dla wymiaru 2 cm
+\draw[dashed, line width=0.6pt]
+    (0,-2.04) -- (2.65,-2.04);
+
+% Wymiar 2 cm - groty skierowane do siebie (> - <)
+
+% Linia wymiarowa
+\draw[line width=0.8pt] (2.65,-2.04) -- (2.65,-1.8);
+
+\draw[->, line width=0.8pt]
+    (2.65,-2.5) -- (2.65,-2.04);
+    
+\node[anchor=west] at (2.85,-1.92) {2 cm};
+
+\end{tikzpicture}
+
+
+\vspace{5mm}
+
+\end{minipage}
+
+
+<!-- zadanie 13 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{13} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Oblicz, ile centymetrów wynosi obwód osłony wentylatora. Zapisz obliczenia i
+zaokrąglij wynik do pełnych centymetrów.
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\end{minipage}
+
+<!-- zadanie 14 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{14} \textit{5 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Łopatki wentylatora są wykonane z tworzywa sztucznego.
+
+\vspace{5mm}
+
+\begin{tikzpicture}[
+    scale=0.85,
+    line cap=round,
+    line join=round,
+    >=latex
+]
+
+% Przerywany okrąg - średnica 30 cm
+\draw[line width=1.2pt, dashed] (0,0) circle (1.8);
+
+% Trzy łopatki wentylatora
+\foreach \a in {0,120,240} {
+    \begin{scope}[rotate=\a]
+        \draw[line width=1.4pt, fill=white]
+            (-0.38,0.40)
+            .. controls (-0.85,0.70) and (-1.65,1.55)
+            .. (-0.35,1.72)
+            .. controls (0.30,1.78) and (0.95,1.35)
+            .. (0.55,0.98)
+            .. controls (0.35,0.78) and (0.08,0.82)
+            .. (-0.05,0.58)
+            -- cycle;
+    \end{scope}
+}
+
+% Zewnętrzny okrąg piasty
+\draw[line width=1.4pt, fill=white]
+    (0,0) circle (0.55);
+
+% Wewnętrzny okrąg piasty
+\draw[line width=1.4pt, fill=white]
+    (0,0) circle (0.29);
+
+% Pozioma linia wymiarowa poniżej łopatek
+\draw[<->, line width=0.8pt]
+    (-1.8,-2.4) -- (1.8,-2.4);
+
+\node[anchor=north] at (0,-2.5) {średnica 30 cm};
+
+\end{tikzpicture}
+
+\vspace{5mm}
+
+Pole powierzchni łopatek wentylatora stanowi $\frac{3}{5}$ pola powierzchni koła zakreślanego przez
+wentylator.
+
+$$\mathit{pole\ koła} = 3{,}14 \times \mathit{promień} \times \mathit{promień}$$
+
+Oblicz, ile cm² wynosi pole powierzchni plastikowych łopatek wentylatora. Zapisz
+obliczenia.
+
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\end{minipage}
+
+# Bravo
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \phantom{to jest }
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+    Bravo to czasopismo komiksowe ukazujące się co 2 tygodnie.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \vspace{0pt}
+    \includegraphics[width=\linewidth]{BB-0153-a-24-1-o-8.png}
+\end{minipage}
+
+\end{minipage}
+
+<!-- zadanie 15 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{15} \textit{1 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Pokaż za pomocą obliczeń, że w ciągu roku ukazuje się 26 numerów Bravo.
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\end{minipage}
+
+
+<!-- zadanie 16 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{16} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Robin otrzymuje od rodziców w prezencie urodzinowym prenumeratę czasopisma
+Bravo. Prenumerata kosztuje 115 euro rocznie. Rodzice płacą jednorazowo 5 euro opłaty
+administracyjnej. Między całkowitym kosztem w euro a liczbą lat prenumeraty Bravo zachodzi
+zależność. Podaj wzór słowny opisujący tę zależność.
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\end{minipage}
+
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \phantom{to jest }
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+W dniu urodzin Robin otrzymuje w prezencie kilka pojedynczych numerów Bravo oraz prenumeratę. Od
+tego dnia zapisuje, ile numerów Bravo posiada. Korzysta w tym celu z następującego wzoru słownego:
+
+$$\mathit{łączna\ liczba\ numerów\ Bravo} = 4 + \mathit{liczba\ tygodni} : 2$$
+
+\end{minipage}
+
+<!-- zadanie 17 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{17} \textit{1 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Ile pojedynczych numerów Bravo Robin otrzymał w prezencie urodzinowym?
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\end{minipage}
+
+<!-- zadanie 18 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{18} \textit{5 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Narysuj wykres odpowiadający temu wzorowi słownemu. Najpierw uzupełnij tabelę.
+Samodzielnie dobierz odpowiednią skalę na osi pionowej.
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+$\mathit{liczba\ tygodni}$ & $\phantom{0} 0$ & $10$ & $20$ & $30$ & $40$ & $50$ \\ \hline
+$\mathit{łączna\ liczba\ numerów\ Bravo}$ &     &         &         &  &        &     \\ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=\textwidth]{BB-0153-a-24-1-o-9.png}
+\end{center}
+
+\end{minipage}
+
+<!-- zadanie 19 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{19} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Oblicz, po ilu tygodniach Robin będzie miał dokładnie 49 numerów Bravo, zgodnie z
+podanym wzorem. Zapisz obliczenia.
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\end{minipage}
+
+# Dotacja
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \phantom{to jest }
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+    Janna otrzymuje od gminy dotację na ocieplenie swojego domu. Oznacza to, że gmina zwraca jej część
+kosztów poniesionych na ocieplenie.
+
+Janna zleca montaż szyb zespolonych (podwójnych) we wszystkich oknach domu. Koszt wynosi 2450
+euro. Janna otrzymuje dotację w wysokości 20\%.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \vspace{0pt}
+    \includegraphics[width=\linewidth]{BB-0153-a-24-1-o-10.png}
+\end{minipage}
+
+\end{minipage}
+
+<!-- zadanie 20 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{20} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Oblicz, ile euro dotacji otrzyma Janna. Zapisz obliczenia. Możesz skorzystać z tabeli.
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\phantom{Ala ma kota, a kot ma Alę}  & \phantom{Ala ma kota} & \phantom{Ala ma kota} & \phantom{Ala ma kota}  \\ \hline
+ &     &         & \\ \hline
+\end{tabular}
+\end{center}
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\end{minipage}
+
+<!-- zadanie 21 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{21} \textit{2 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Szyby zespolone wraz z montażem kosztują 136,25 euro za m². Oblicz, ile m² szyb
+zespolonych zostanie zamontowanych u Janny. Zapisz obliczenia.
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\end{minipage}
+
+<!-- zadanie 22 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{22} \textit{4 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Sąsiad Janny również zamierza ocieplić dom. Jeśli jednocześnie zamontuje szyby
+zespolone i ociepli ściany, otrzyma dotację wyższą niż 20\%. Łączny koszt montażu szyb zespolonych i
+ocieplenia ścian wynosi 9000 euro. Sąsiad Janny musi zapłacić 6300 euro. Pozostałą część kosztów
+pokrywa gmina w formie dotacji. Oblicz, jaki procent dotacji otrzymuje od gminy. Zapisz obliczenia.
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\phantom{Ala ma kota, a kot ma Alę}  & \phantom{Ala ma kota} & \phantom{Ala ma kota} & \phantom{Ala ma kota}  \\ \hline
+ &     &         & \\ \hline
+\end{tabular}
+\end{center}
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\vspace{5mm}
+
+\noindent\dotfill
+
+\end{minipage} 
+
+
+
+
 
 

@@ -1,0 +1,21 @@
+# Przygotowawcze szkolnictwo zawodowe (VMBO) z rozszerzoną ścieżką zawodową (KB)
+
+treść
+
+## Zadania
+
+treść`
+
+### Rok 2024 (Sesja 1)
+
+treść
+
+\includepdf[pages=-, fitpaper=true, pagecommand={\thispagestyle{plain}}]{sources/KB-0153-a-24-1-o.pdf}
+
+## Modele oceny
+
+treść
+
+### Rok 2024 (Sesja 1)
+
+\includepdf[pages=-, fitpaper=true, pagecommand={\thispagestyle{plain}}]{sources/KB-0153-a-24-1-c.pdf}

@@ -1,0 +1,503 @@
+---
+title: "BB-0153-a-24-1-c"
+format:
+  pdf:
+    pdf-engine: lualatex
+header-includes:
+  - \usepackage{tikz}
+  - \usetikzlibrary{shapes.geometric}
+  - \usepackage{amsmath}
+  - \usepackage{amssymb}
+  - \usepackage{titlesec}
+  - \titleformat{\section}{\normalfont\Large\bfseries\centering}{\thesection}{1em}{}
+  - \pagenumbering{gobble}
+  - \usepackage{wasysym}
+---
+
+# Instrukcje
+
+Za każdy błąd rachunkowy odejmuje się 1 punkt, maksymalnie do liczby punktów możliwych do odjęcia za daną część zadania.
+Jeżeli zdający popełnił błąd zapisu, który – jak można stwierdzić – nie wpływa dalej na odpowiedź końcową, nie odejmuje się za niego punktów.
+
+# Witraż
+
+<!-- zadanie 1 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{1} \textit{2 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\Square \phantom{to} trójkąt 
+
+\Square \phantom{to} sześcian
+
+\Square \phantom{to} graniastosłup
+
+\XBox \phantom{to} prostokąt
+
+\XBox \phantom{to} kwadrat
+
+\vspace{5mm}
+
+\textit{Uwaga: \newline Za każdą brakującą lub błędną odpowiedź odejmuje się 1 punkt, maksymalnie 2 punkty.}
+
+
+\end{minipage}
+
+<!-- zadanie 2 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{2} \textit{2 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\vspace{5mm}
+\begin{tikzpicture}[scale=0.8, line width=1pt]
+
+  % Główny zewnętrzny kwadrat 6x6
+  \draw (0,0) rectangle (6,6);
+
+  % Zewnętrzna ramka
+  \draw (0,1) -- (6,1);
+  \draw (0,5) -- (6,5);
+  \draw (1,0) -- (1,6);
+  \draw (5,0) -- (5,6);
+
+  % Środkowa ramka
+  \draw (1,2) -- (5,2);
+  \draw (1,4) -- (5,4);
+  \draw (1.5,1) -- (1.5,5);
+  \draw (4.5,1) -- (4.5,5);
+
+  % Przekątne
+  \draw (1.5,2) -- (4.5,4);
+  \draw (1.5,4) -- (4.5,2);
+
+  % Pionowa oś symetrii
+  \draw[dashed, thick] (3,-0.5) -- (3,6.5);
+
+  % Pozioma oś symetrii
+  \draw[dashed, thick] (-0.5,3) -- (6.5,3);
+
+\end{tikzpicture}
+
+\textit{Uwaga: \newline za każdą brakującą lub błędną oś symetrii odejmuje się 1 punkt, maksymalnie 2 punkty.}
+
+
+    
+\end{minipage}
+
+
+<!-- zadanie 3 -->
+
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{3} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\begin{itemize}
+    \item Wysokość = 20 : 2 = 10 cm \hfill \textit{1 pkt}
+    \item Pole trójkąta = 30 × 10 : 2 = 150 cm² \hfill \textit{1 pkt}
+    \item Łączne pole = 2 × 150 = 300 cm² \hfill \textit{1 pkt}
+\end{itemize}
+
+
+\end{minipage}
+
+<!-- zadanie 4 -->
+
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{4} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\begin{itemize}
+    \item Kąt C = kąt B = 56° \hfill \textit{1 pkt}
+    \item 180 − 56 − 56 \hfill \textit{1 pkt}
+    \item Odpowiedź: 68° \hfill \textit{1 pkt}
+\end{itemize}
+
+\end{minipage}
+
+<!-- zadanie 5 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{5} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\begin{itemize}
+    \item 10 + 40 + 10 = 60 cm \hfill \textit{1 pkt}
+    \item 4 × 60 = 240 cm \hfill \textit{1 pkt}
+    \item Odpowiedź: nie, Rachid nie ma wystarczającej ilości drewna \hfill \textit{1 pkt}
+\end{itemize}
+
+\end{minipage}
+
+# Największe drzewo
+
+<!-- zadanie 6 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{6} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\begin{itemize}
+    \item Wzrost dorosłego człowieka wynosi od 1,70 do 2 m \hfill \textit{1 pkt}
+    \item Mężczyzna mieści się w wysokości pnia około 5–6 razy \hfill \textit{1 pkt}
+    \item Odpowiedź: od 8,5 do 12 m \hfill \textit{1 pkt}
+\end{itemize}
+
+\end{minipage}
+
+<!-- zadanie 7 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{7} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\begin{itemize}
+    \item 28 m = 2800 cm \hfill \textit{1 pkt}
+    \item 2800 : 80 = 35 \hfill \textit{1 pkt}
+    \item 35 × 2 = 70 dzieci \hfill \textit{1 pkt}
+\end{itemize}
+
+\end{minipage}
+
+<!-- zadanie 8 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{8} \textit{2 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\vspace{5mm}
+
+\begin{center}
+    \includegraphics[width=\textwidth]{BB-0153-a-24-1-o-11.png}
+\end{center}
+\vspace{5mm}
+
+\begin{itemize}
+    \item 2024 − 2500 = −476 \hfill \textit{1 pkt}
+    \item Narysowanie strzałki we właściwym miejscu na osi czasu \hfill \textit{1 pkt}
+\end{itemize}
+\end{minipage}
+
+
+# Brodzik dla małych dzieci
+
+<!-- zadanie 9 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+ \hspace*{0.2cm}\textbf{9} \textit{1 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+2 − 0,5 × 1,2 × 1,2 = 1,28 m
+
+\end{minipage}
+
+
+<!-- zadanie 10 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{10} \textit{1 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+2 − 0,5 × 2 × 2 = 0 m
+
+\end{minipage}
+
+<!-- zadanie 11 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{11} \textit{4 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\vspace{5mm}
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+$\mathit{odległość}$ (metry) & $0{,}0$ & $0{,}4$  & $0{,}8$  & $1{,}2$  & $1{,}6$  & $2{,}0$ \\ \hline
+$\mathit{wysokość}$ (metry)  & $2{,}0$ & $1{,}92$ & $1{,}68$ & $1{,}28$ & $0{,}72$ & $0{,}0$ \\ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=\textwidth]{BB-0153-a-24-1-o-12.png}
+\end{center}
+
+\begin{itemize}
+    \item Poprawne wartości w tabeli \hfill \textit{2 pkt}
+    \item Zaznaczenie punktów \hfill \textit{1 pkt}
+    \item Narysowanie gładkiej krzywej przez punkty \hfill \textit{1 pkt}
+\end{itemize}
+
+\textit{Uwaga: \newline za każdą brakującą lub błędną wartość w tabeli odejmuje się 1 punkt, maksymalnie 2 punkty.}
+
+\end{minipage}
+
+# Wentylator
+
+
+<!-- zadanie 12 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{12} \textit{1 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+\vspace{5mm}
+
+\textbf{TAK} / \tikz[baseline=(N.base)] \node[draw, ellipse, inner sep=2pt, outer sep=0pt] (N) {\textbf{NIE}};
+
+\end{minipage}
+
+<!-- zadanie 13 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{13} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\begin{itemize}
+    \item Średnica osłony = 2 + 30 + 2 = 34 cm \hfill \textit{1 pkt}
+    \item Obwód koła = 3,14 × 34 = 106,76 cm \hfill \textit{1 pkt}
+    \item Odpowiedź: 107 cm \hfill \textit{1 pkt}
+\end{itemize}
+
+\end{minipage}
+
+<!-- zadanie 14 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{14} \textit{5 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\begin{itemize}
+    \item Promień = 30 : 2 = 15 cm \hfill \textit{1 pkt}
+    \item Pole koła = 3,14 × 15 × 15 = 706,5 cm² \hfill \textit{2 pkt}
+    \item 706,5 : 5 = 141,3 cm² \hfill \textit{1 pkt}
+    \item 141,3 × 3 = 424 cm² (lub 423,9 cm²) \hfill \textit{1 pkt}
+\end{itemize}
+
+\end{minipage}
+
+# Bravo
+
+<!-- zadanie 15 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{15} \textit{1 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+52 : 2 = 26 numerów Bravo
+
+\end{minipage}
+
+
+<!-- zadanie 16 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{16} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Przykładowy poprawny wzór słowny: 
+
+$$\mathit{całkowity\ koszt} = 5 + 115 \times \mathit{liczba\ lat}$$
+
+\begin{itemize}
+    \item Współczynnik kierunkowy wynosi 115 \hfill \textit{1 pkt}
+    \item Wyraz wolny wynosi 5 \hfill \textit{1 pkt}
+    \item Poprawna lewa i prawa strona wzoru \hfill \textit{1 pkt}
+\end{itemize}
+
+\end{minipage}
+
+<!-- zadanie 17 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{17} \textit{1 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+4 numery Bravo
+
+\end{minipage}
+
+<!-- zadanie 18 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{18} \textit{5 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\vspace{5mm}
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+$\mathit{liczba\ tygodni}$ & $\phantom{0} 0$ & $10$ & $20$ & $30$ & $40$ & $50$ \\ \hline
+$\mathit{łączna\ liczba\ numerów\ Bravo}$ & $4$ & $9$ & $14$ & $19$ & $24$ & $29$    \\ \hline
+\end{tabular}
+\end{center}
+
+Przykład poprawnego wykresu:
+
+\begin{center}
+    \includegraphics[width=\textwidth]{BB-0153-a-24-1-o-13.png}
+\end{center}
+
+\begin{itemize}
+    \item Poprawne wartości w tabeli \hfill \textit{2 pkt}
+    \item Właściwa skala osi pionowej \hfill \textit{1 pkt}
+    \item Zaznaczenie punktów \hfill \textit{1 pkt}
+    \item Prosta przez punkty \hfill \textit{1 pkt}
+\end{itemize}
+
+
+\textit{Uwaga: \newline za każdą brakującą lub błędną wartość w tabeli odejmuje się 1 punkt, maksymalnie 2 punkty.}
+
+\end{minipage}
+
+<!-- zadanie 19 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{19} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\begin{itemize}
+    \item Przez odpowiednie próby: 4 + 90 : 2 = 49 numerów Bravo \hfill \textit{2 pkt}
+    \item Odpowiedź: 90 tygodni \hfill \textit{1 pkt}
+\end{itemize}
+
+\end{minipage}
+
+# Dotacja
+
+<!-- zadanie 20 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{20} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\begin{itemize}
+    \item Prawidłowe przyjęcie 100\% \hfill \textit{1 pkt}
+    \item 
+      \begin{tabular}{|l|c|c|c|}
+      \hline
+        euro  & $2450$ & $24{,}5$ & $490$  \\ \hline
+        \%    & $100$ &    $1$     & $20$ \\ \hline
+      \end{tabular}
+    \hfill \textit{1 pkt}
+    \item Odpowiedź: 490 euro \hfill \textit{1 pkt}
+\end{itemize}
+
+\end{minipage}
+
+<!-- zadanie 21 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{21} \textit{2 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+
+\begin{itemize}
+    \item 2450 : 136,25 \hfill \textit{1 pkt}
+    \item Odpowiedź: 18 m² (lub dokładniej) \hfill \textit{1 pkt}
+\end{itemize}    
+    
+
+
+\end{minipage}
+
+<!-- zadanie 22 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{22} \textit{4 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Sąsiad Janny również zamierza ocieplić dom. Jeśli jednocześnie zamontuje szyby
+zespolone i ociepli ściany, otrzyma dotację wyższą niż 20\%. Łączny koszt montażu szyb zespolonych i
+ocieplenia ścian wynosi 9000 euro. Sąsiad Janny musi zapłacić 6300 euro. Pozostałą część kosztów
+pokrywa gmina w formie dotacji. Oblicz, jaki procent dotacji otrzymuje od gminy. Zapisz obliczenia.
+
+\begin{itemize}
+    \item 9000 − 6300 = 2700 euro \hfill \textit{1 pkt}
+    \item Prawidłowe przyjęcie 100\% \hfill \textit{1 pkt}
+    \item 
+      \begin{tabular}{|l|c|c|c|}
+      \hline
+        euro  & $9000$ & $90$ & $2700$  \\ \hline
+        \%    & $100$ &  $1$  & $30$ \\ \hline
+      \end{tabular}
+    \hfill \textit{1 pkt}
+    \item Odpowiedź: 490 euro \hfill \textit{1 pkt}
+\end{itemize}
+
+\end{minipage} 
+
+
+
+
+
+
