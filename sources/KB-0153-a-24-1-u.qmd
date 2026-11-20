@@ -1,0 +1,163 @@
+---
+title: "KB-0153-a-24-1-u"
+format:
+  pdf:
+    pdf-engine: lualatex
+header-includes:
+  - \usepackage{tikz}
+  - \usetikzlibrary{calc}
+  - \usepackage{amsmath}
+  - \usepackage{amssymb}
+  - \usepackage{titlesec}
+  - \titleformat{\section}{\normalfont\Large\bfseries\centering}{\thesection}{1em}{}
+  - \pagenumbering{gobble}
+---
+
+
+# Wulkan
+
+<!-- zadanie 5 oraz 6 -->
+
+<!-- zapewnić na wydryku ta odległość to 6 cm -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{6 oraz 7}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\vspace{5mm}
+\begin{center}
+    \begin{tikzpicture}
+        % Wstawienie obrazka jako węzeł TikZ o nazwie "img"
+        \node[inner sep=0, outer sep=0] (img) {\includegraphics[width=0.8\textwidth]{KB-0153-a-24-1-u-1.png}};
+        
+        % [OPCJONALNIE] Włącz poniższą linię (usuń %%), aby wyświetlić siatku cm w celach pomocniczych.
+        % Pomaga to odczytać współrzędne punktów P i Z względem lewego dolnego rogu obrazka (img.south west).
+        %\draw[help lines, xstep=1cm, ystep=1cm] (img.south west) grid (img.north east);
+        
+        % Definiowanie współrzędnych punktów P i Z (w centymetrach od lewego dolnego rogu obrazka)
+        \coordinate (P) at ($(img.south west) + (3.55cm, 3.45cm)$);
+        \coordinate (Z) at ($(img.south west) + (8.8cm, 3.45cm)$);
+        
+        % Rysowanie punktów P i Z (czerwone kropki z etykietami)
+        \fill[black] (P) circle (0.1mm) node[above left] {$P$};
+        \fill[black] (Z) circle (0.1mm) node[above right] {$Z$};
+        
+        % Rysowanie linii wymiarowej ze strzałkami i napisem pośrodku
+        \draw[<->, >=latex, thick, black] (P) -- (Z) node[midway, above] {9 km};
+        
+    \end{tikzpicture}
+\end{center}
+\end{minipage}
+
+<!-- zadanie 12 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{12}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+\vspace{5mm}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+$\mathit{d}$ (cm) & $12$ & $14$ & $16$ & $18$ & $20$ \\ \hline
+$\mathit{ilość\ włókna\ kokosowego}$ (cm³) & $205$ & \phantom{$100$} &  \phantom{$100$} & \phantom{$100$} & \phantom{$100$} \\ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=\textwidth]{KB-0153-a-24-1-u-2.png}
+\end{center}
+
+\end{minipage}
+
+
+# Lodowiec 
+
+<!-- zadanie 19 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{19}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+\vspace{5mm}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\hline
+$\mathit{t}$ (lat) & $ \phantom{0} 0$ & $10$ & $20$ & $30$ & $40$ & $50$ & $60$\\ \hline
+$\mathit{O}$ (km²) &  &  & $73$  &  & &  & \\ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=\textwidth]{KB-0153-a-24-1-u-3.png}
+\end{center}
+
+\end{minipage}
+
+# Namiot imprezowy
+
+<!-- zadanie 21 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{21}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\vspace{5mm}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.3]
+    % Promienie dla dwóch rodzajów wierzchołków (możesz je niezależnie modyfikować)
+    \def\Rext{3cm} % Promień dla wierzchołków B, D, F, H, J, L
+    \def\Rint{3.2cm} % Promień dla wierzchołków A, C, E, G, I, K (mniejszy lub inny)
+    
+    % Współrzędne wierzchołków (rozmieszczone co 30°)
+    % Nieparzyste (A, C, E, G, I, K) oraz parzyste (B, D, F, H, J, L)
+    \coordinate (A) at (-90:\Rint);
+    \coordinate (B) at (-60:\Rext);
+    \coordinate (C) at (-30:\Rint);
+    \coordinate (D) at (0:\Rext);
+    \coordinate (E) at (30:\Rint);
+    \coordinate (F) at (60:\Rext);
+    \coordinate (G) at (90:\Rint);
+    \coordinate (H) at (120:\Rext);
+    \coordinate (I) at (150:\Rint);
+    \coordinate (J) at (180:\Rext);
+    \coordinate (K) at (210:\Rint);
+    \coordinate (L) at (240:\Rext);
+    
+    % Środek wielokąta
+    \coordinate (M) at (0,0);
+
+    % Wypełnienie wnętrza szarym kolorem
+    \fill[gray!30] (A) -- (B) -- (C) -- (D) -- (E) -- (F) -- (G) -- (H) -- (I) -- (J) -- (K) -- (L) -- cycle;
+
+    % Rysowanie czarnych krawędzi zewnętrznych
+    \draw[thick] (A) -- (B) -- (C) -- (D) -- (E) -- (F) -- (G) -- (H) -- (I) -- (J) -- (K) -- (L) -- cycle;
+
+    % Rysowanie wewnętrznych linii przerywanych (łączących wybrane wierzchołki: L-B-D-F-H-J)
+    \draw[dashed, thick, black!70] (L) -- (B) -- (D) -- (F) -- (H) -- (J) -- cycle;
+
+    % Rysowanie punktów i etykiet
+    \foreach \pt/\pos in {A/below, B/below right, C/right, D/right, E/above right, F/above right, G/above, H/above left, I/left, J/left, K/below left, L/below left} {
+        \fill (\pt) circle (1.5pt);
+        \node[\pos] at (\pt) {$\pt$};
+    }
+
+    % Punkt M w środku i jego etykieta
+    \fill (M) circle (1.5pt);
+    \node[above right] at (M) {$M$};
+
+\end{tikzpicture}
+\end{center}
+
+\end{minipage}
