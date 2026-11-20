@@ -3,14 +3,8 @@ title: "KB-0153-a-24-1-u"
 format:
   pdf:
     pdf-engine: lualatex
-header-includes:
-  - \usepackage{tikz}
-  - \usetikzlibrary{calc}
-  - \usepackage{amsmath}
-  - \usepackage{amssymb}
-  - \usepackage{titlesec}
-  - \titleformat{\section}{\normalfont\Large\bfseries\centering}{\thesection}{1em}{}
-  - \pagenumbering{gobble}
+    include-in-header:
+      file: preamble.tex
 ---
 
 
@@ -22,7 +16,7 @@ header-includes:
 
 \noindent
 \begin{minipage}[t]{0.10\textwidth}
-    \textbf{6 oraz 7}
+    \textbf{6 i 7}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
@@ -117,8 +111,8 @@ $\mathit{O}$ (km²) &  &  & $73$  &  & &  & \\ \hline
 \begin{center}
 \begin{tikzpicture}[scale=1.3]
     % Promienie dla dwóch rodzajów wierzchołków (możesz je niezależnie modyfikować)
-    \def\Rext{3cm} % Promień dla wierzchołków B, D, F, H, J, L
-    \def\Rint{3.2cm} % Promień dla wierzchołków A, C, E, G, I, K (mniejszy lub inny)
+    \def\Rext{3.7cm} % Promień dla wierzchołków B, D, F, H, J, L
+    \def\Rint{4.0cm} % Promień dla wierzchołków A, C, E, G, I, K (mniejszy lub inny)
     
     % Współrzędne wierzchołków (rozmieszczone co 30°)
     % Nieparzyste (A, C, E, G, I, K) oraz parzyste (B, D, F, H, J, L)

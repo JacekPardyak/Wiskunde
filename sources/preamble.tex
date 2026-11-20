@@ -1,0 +1,18 @@
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{calc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\Large\bfseries\centering}{\thesection}{1em}{}
+\pagenumbering{gobble}
+\usepackage{wasysym}
+\usepackage{polyglossia}
+\setdefaultlanguage{polish}
+\usepackage{pifont}
+\newcommand{\zadanie}[1]{%
+  \par\noindent
+  \makebox[1.6em][l]{\large\ding{212}}%
+  \hangindent=1.6em\hangafter=1 #1\par
+  }
+        

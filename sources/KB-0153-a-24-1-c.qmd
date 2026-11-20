@@ -3,14 +3,8 @@ title: "KB-0153-a-24-1-c"
 format:
   pdf:
     pdf-engine: lualatex
-header-includes:
-  - \usepackage{tikz}
-  - \usetikzlibrary{calc}
-  - \usepackage{amsmath}
-  - \usepackage{amssymb}
-  - \usepackage{titlesec}
-  - \titleformat{\section}{\normalfont\Large\bfseries\centering}{\thesection}{1em}{}
-  - \pagenumbering{gobble}
+    include-in-header:
+      file: preamble.tex
 ---
 
 # Instrukcje
@@ -426,8 +420,8 @@ Przykład prawidłowego wykresu:
 \begin{center}
 \begin{tikzpicture}[scale=1.3]
     % Promienie dla dwóch rodzajów wierzchołków
-    \def\Rext{3cm} % Promień dla wierzchołków B, D, F, H, J, L
-    \def\Rint{3.2cm} % Promień dla wierzchołków A, C, E, G, I, K
+    \def\Rext{3.7cm} % Promień dla wierzchołków B, D, F, H, J, L
+    \def\Rint{4.0cm} % Promień dla wierzchołków A, C, E, G, I, K (mniejszy lub inny)
     
     % Współrzędne wierzchołków (rozmieszczone co 30°)
     \coordinate (A) at (-90:\Rint);
