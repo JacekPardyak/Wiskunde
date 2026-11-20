@@ -6,8 +6,6 @@ book:
   author: "Jacek"
   chapters:
     - index.qmd
-    - sources/VMBO-BB.qmd
-    - sources/VMBO-KB.qmd
 
 format:
   pdf:

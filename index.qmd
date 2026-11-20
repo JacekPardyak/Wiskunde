@@ -2,3 +2,48 @@
 
 Dokument przedstawia system holenderskich egzaminów 
 końcowych z matematyki, ich strukturę oraz dostępne arkusze.
+
+# Przygotowawcze Szkolnictwo Zawodowe (VMBO)
+
+## Podstawowa Ścieżka Zawodowa (BB)
+
+### Rok 2024 (Termin 1)
+
+\includepdf[pages=-, fitpaper=true, pagecommand={\thispagestyle{plain}}]{sources/BB-0153-a-24-1-o.pdf}
+\includepdf[pages=-, fitpaper=true, pagecommand={\thispagestyle{plain}}]{sources/BB-0153-a-24-1-c.pdf}
+
+
+
+## Rozszerzona Ścieżka Zawodowa (KB)
+
+### Rok 2024 (Termin 1)
+
+
+
+\includepdf[pages=-, fitpaper=true, pagecommand={\thispagestyle{plain}}]{sources/KB-0153-a-24-1-o.pdf}
+\includepdf[pages=-, fitpaper=true, pagecommand={\thispagestyle{plain}}]{sources/KB-0153-a-24-1-u.pdf}
+\includepdf[pages=-, fitpaper=true, pagecommand={\thispagestyle{plain}}]{sources/KB-0153-a-24-1-c.pdf}
+
+## Ścieżka Mieszana (GL) oraz Ścieżka Teoretyczna (TL)
+
+### Rok 2024 (Termin 1)
+
+```{r}
+#| echo: false
+#| 
+#<--! Zadania egzaminacyjne -->
+#<--! Arkusz roboczy -->
+#<--! Model oceny -->
+  
+# 
+# \includepdf[pages=-, fitpaper=true, pagecommand={\thispagestyle{plain}}]{sources/GT-0153-a-24-2-o.pdf} 
+```
+
+\includepdf[pages=-, fitpaper=true, pagecommand={\thispagestyle{plain}}]{sources/GT-0153-a-24-1-o.pdf}
+\includepdf[pages=-, fitpaper=true, pagecommand={\thispagestyle{plain}}]{sources/GT-0153-a-24-1-u.pdf}
+
+### Rok 2024 (Termin 2)
+ 
+
+# Wyższe Szkolnictwo Ogólnokształcące (HAVO)
+
