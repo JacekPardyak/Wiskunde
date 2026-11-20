@@ -3,16 +3,8 @@ title: "GT-0153-a-24-1-o"
 format:
   pdf:
     pdf-engine: lualatex
-header-includes:
-  - \usepackage{tikz}
-  - \usetikzlibrary{calc}
-  - \usepackage{amsmath}
-  - \usepackage{amssymb}
-  - \usepackage{titlesec}
-  - \titleformat{\section}{\normalfont\Large\bfseries\centering}{\thesection}{1em}{}
-  - \pagenumbering{gobble}
-  - \usepackage{polyglossia}
-  - \setdefaultlanguage{polish}
+    include-in-header:
+      file: preamble.tex
 ---
 
 # Instrukcje
@@ -69,8 +61,8 @@ $B$ oznacza kwotę na koncie w euro, a $n$ — liczbę miesięcy oszczędzania.
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 
-Po 3 latach na koncie znajduje się prawie 1908 euro. Oblicz za pomocą wzoru dokładną kwotę po
-3 latach. Zapisz obliczenia.
+Po 3 latach na koncie znajduje się prawie 1908 euro. \zadanie{Oblicz za pomocą wzoru dokładną kwotę po
+3 latach. Zapisz obliczenia.}
 
 \end{minipage}
 
@@ -84,7 +76,7 @@ Po 3 latach na koncie znajduje się prawie 1908 euro. Oblicz za pomocą wzoru do
 \begin{minipage}[t]{0.9\textwidth}
 
 W załączniku znajduje się układ współrzędnych z narysowanym wykresem tego wzoru. Brakuje
-liczb na osi pionowej. Wpisz właściwe liczby na osi pionowej.
+liczb na osi pionowej. \zadanie{Wpisz właściwe liczby na osi pionowej.}
 
 \end{minipage}
 
@@ -98,53 +90,39 @@ liczb na osi pionowej. Wpisz właściwe liczby na osi pionowej.
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 
-Milan przestaje oszczędzać, gdy po raz pierwszy na koncie znajduje się więcej niż 5000 euro.
-Oblicz, przez ile miesięcy oszczędzał. Zapisz obliczenia.
+Milan przestaje oszczędzać, gdy po raz pierwszy na koncie znajduje się więcej niż 5000 euro. \zadanie{Oblicz, przez ile miesięcy oszczędzał. Zapisz obliczenia.}
 
 \end{minipage}
 
 \vspace{25mm}
 
-Krowy mleczne
+# Krowy mleczne
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \phantom{to jest }
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\begin{center}
+    \includegraphics[width=\textwidth]{GT-0153-a-24-1-o-3.png}
+\end{center}
+
 Hodowca Jolles ma 450 krów.
-4. (2 pkt) Krowa je trawę, kukurydzę i paszę treściwą w proporcji 8 : 2 : 3. Krowa zjada dziennie 11 kg paszy
-treściwej. Oblicz, ile kilogramów trawy zjada dziennie jedna krowa. Zapisz obliczenia.
-Krowy hodowcy Jolles dają łącznie 84 000 litrów mleka tygodniowo.
-5. (4 pkt) Cysterna do przewozu mleka ma zbiornik w kształcie walca o średnicy 2,4 m i długości 8 m.
-Oblicz, ile zbiorników można napełnić tygodniową produkcją mleka krów hodowcy Jolles. Zapisz obliczenia i
-zaokrąglij wynik do jednego miejsca po przecinku.
-6. (3 pkt) Co tydzień 4% całkowitej ilości mleka od hodowcy Jolles przeznacza się na ser. Do
-wyprodukowania 1 kg sera potrzeba 8 litrów mleka. Oblicz, ile kilogramów sera tygodniowo powstaje z
-mleka dostarczanego przez hodowcę Jolles. Zapisz obliczenia.
-7. (3 pkt) W Holandii jest łącznie 1,5 miliona krów mlecznych. Średnio każda daje 24 litry mleka dziennie.
-Oblicz, ile litrów mleka te krowy dają rocznie. Zapisz obliczenia, podaj wynik w notacji naukowej i zaokrąglij
-do jednego miejsca po przecinku.
+
+\end{minipage}
 
 <!-- zadanie 4 -->
 
 \noindent
 \begin{minipage}[t]{0.10\textwidth}
-    \textbf{4} \textit{3 pkt}
+    \textbf{4} \textit{2 pkt}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 
-Podaj wzór opisujący tę sytuację. Oznacz $L$ jako temperaturę lawy w °C, a $t$ jako czas w minutach od
-erupcji.
-
-\end{minipage}
-
-<!-- zadanie 5 -->
-
-\noindent
-\begin{minipage}[t]{0.10\textwidth}
-    \textbf{5} \textit{3 pkt}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.9\textwidth}
-
-Piton de la Fournaise jest jednym z najbardziej aktywnych wulkanów świata. Od 1640 roku
-odnotowano 153 erupcje. Oblicz, ile lat średnio upływa między erupcjami. Zapisz obliczenia i zaokrąglij wynik do jednego miejsca po przecinku.
+Krowa je trawę, kukurydzę i paszę treściwą w proporcji 8 : 2 : 3. Krowa zjada dziennie 11 kg paszy treściwej. \zadanie{Oblicz, ile kilogramów trawy zjada dziennie jedna krowa. Zapisz obliczenia.}
 
 \end{minipage}
 
@@ -155,9 +133,20 @@ odnotowano 153 erupcje. Oblicz, ile lat średnio upływa między erupcjami. Zapi
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 
-Na arkuszu roboczym znajduje się mapa okolicy wulkanu. Punkt $P$ jest środkiem wulkanu, a w punkcie $Z$
-znajduje się centrum informacji. W rzeczywistości odległość $|PZ|$ wynosi 9 km.
+Krowy hodowcy Jolles dają łącznie 84 000 litrów mleka tygodniowo.
 
+\end{minipage}
+
+<!-- zadanie 5 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{5} \textit{4 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Cysterna do przewozu mleka ma zbiornik w kształcie walca o średnicy 2,4 m i długości 8 m. \zadanie{Oblicz, ile zbiorników można napełnić tygodniową produkcją mleka krów hodowcy Jolles. Zapisz obliczenia i zaokrąglij wynik do jednego miejsca po przecinku.}
 \end{minipage}
 
 <!-- zadanie 6 -->
@@ -169,7 +158,8 @@ znajduje się centrum informacji. W rzeczywistości odległość $|PZ|$ wynosi 9
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 
-Pokaż obliczeniami, że skala mapy wynosi 1 : 150 000.
+Co tydzień 4\% całkowitej ilości mleka od hodowcy Jolles przeznacza się na ser. Do
+wyprodukowania 1 kg sera potrzeba 8 litrów mleka. \zadanie{Oblicz, ile kilogramów sera tygodniowo powstaje z mleka dostarczanego przez hodowcę Jolles. Zapisz obliczenia.}
 
 \end{minipage}
 
@@ -182,8 +172,7 @@ Pokaż obliczeniami, że skala mapy wynosi 1 : 150 000.
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 
-W promieniu 3 km od punktu $P$ wszystko jest pokryte lawą z ostatniej erupcji. Zamaluj na mapie w
-arkuszu roboczym obszar pokryty lawą.
+W Holandii jest łącznie 1,5 miliona krów mlecznych. Średnio każda daje 24 litry mleka dziennie. \zadanie{Oblicz, ile litrów mleka te krowy dają rocznie. Zapisz obliczenia, podaj wynik w notacji naukowej i zaokrąglij do jednego miejsca po przecinku.}
 
 \end{minipage}
 
@@ -236,8 +225,6 @@ arkuszu roboczym obszar pokryty lawą.
     \includegraphics[width=1\linewidth]{GT-0153-a-24-1-u-2.png}
 \end{minipage}
 
-
-
 \vspace{5mm}
 
 Harfa jest instrumentem strunowym. Struny są rozpięte między szyjką a pudłem rezonansowym. Wszystkie struny biegną równolegle do kolumny. 
@@ -280,17 +267,17 @@ Struny mają stały wzór kolorów: \textit{czerwony},
 
 \end{minipage}
 
- 
 <!-- zadanie 9 -->
 
 \noindent
 \begin{minipage}[t]{0.10\textwidth}
-    \textbf{9} \textit{3 pkt}
+    \textbf{9} \textit{2 pkt}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 
-Pokaż obliczeniami, że kokos może zawierać około 524 cm³ wody kokosowej.
+W załączniku narysowano część strun. \zadanie{Narysuj w załączniku trzy brakujące czarne struny we
+właściwych miejscach.}
 
 \end{minipage}
 
@@ -298,12 +285,12 @@ Pokaż obliczeniami, że kokos może zawierać około 524 cm³ wody kokosowej.
 
 \noindent
 \begin{minipage}[t]{0.10\textwidth}
-    \textbf{10} \textit{3 pkt}
+    \textbf{10} \textit{2 pkt}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 
-Oblicz objętość białego miąższu w cm³. Zapisz obliczenia.
+W układzie współrzędnych punkty $A$(0, 0) i $B$(5, 8) leżą na jednej prostej. \zadanie{Podaj wzór tej prostej.}
 
 \end{minipage}
 
@@ -315,38 +302,10 @@ Oblicz objętość białego miąższu w cm³. Zapisz obliczenia.
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 
-Skorupa składa się z włókna kokosowego. Ilość włókna kokosowego oblicza się ze wzoru: 
+Długość strun można obliczyć ze wzoru:
 
-$$\mathit{ilość\ włókna\ kokosowego} = 1{,}6 \cdot d^2 − 1{,}6 \cdot d − 6$$
-
-Wynik jest w cm³, a $d$ oznacza średnicę kokosa w cm.
-
-\begin{center}
-    \begin{tikzpicture}
-        % Wstawienie obrazka jako węzeł TikZ o nazwie "img"
-        \node[inner sep=0, outer sep=0] (img) {\includegraphics[width=0.8\textwidth]{KB-0153-a-24-1-o-4.png}};
-        
-        % [OPCJONALNIE] Siatka pomocnicza
-        % \draw[help lines, xstep=1cm, ystep=1cm] (img.south west) grid (img.north east);
-        
-        % Definiowanie współrzędnych punktów P i Z
-        \coordinate (P) at ($(img.south west) + (1.3cm, 4.9cm)$);
-        \coordinate (Z) at ($(img.south west) + (9.5cm, 4.9cm)$);
-        \coordinate (R) at ($(img.south west) + (1.25cm, 4.9cm)$);
-        \coordinate (Q) at ($(img.south west) + (9.55cm, 4.9cm)$);
-        
-        % Rysowanie punktów P i Z
-        %\fill[white] (P) circle (0.5mm) node[above left] {$$};
-        %\fill[white] (Z) circle (0.5mm) node[above right] {$$};
-        
-        % 1. Tło pod linią i grotami (grubsza biała linia tworząca "poświatę")
-         \draw[white, line width=0.5mm, <->, >=latex] (R) -- (Q);
-        
-        % 2. Właściwa linia wymiarowa oraz napis z białym tłem
-        \draw[<->, >=latex, thick, black] (P) -- (Z) node[midway, above, fill=white, inner sep=1.5pt] {$d$};
-        
-    \end{tikzpicture}
-\end{center}
+$$\mathit{długość} = 0{,}07 \cdot a^3 − 0{,}4 \cdot a^2 − 1{,}6 \cdot a + 9{,}25$$
+Długość struny podana jest w dm, a $a$ oznacza odległość od czerwonej struny $AC$ w dm.
 
 \end{minipage}
 
@@ -359,8 +318,7 @@ Wynik jest w cm³, a $d$ oznacza średnicę kokosa w cm.
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 
-Pokaż obliczeniem, że dla kokosa o średnicy 12 cm ilość włókna kokosowego wynosi po
-zaokrągleniu 205 cm³.
+Odległość między strunami $AC$ i $LM$ wynosi 3,5 dm. \zadanie{Korzystając ze wzoru, pokaż, że struna $LM$ ma długość około 1,75 dm.}
 
 \end{minipage}
 
@@ -368,13 +326,12 @@ zaokrągleniu 205 cm³.
 
 \noindent
 \begin{minipage}[t]{0.10\textwidth}
-    \textbf{12} \textit{4 pkt}
+    \textbf{12} \textit{3 pkt}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 
-Kokosy zbiera się, gdy mają średnicę od 12 do 20 cm. Narysuj na arkuszu roboczym wykres
-odpowiadający wzorowi. Najpierw uzupełnij tabelę.
+Jedna ze strun ma długość 0,93 dm. \zadanie{Użyj wzoru, aby ustalić, czy jest \textit{czerwona}, \textbf{\textcolor{gray}{szara}} czy \textbf{czarna}. Pokaż, jak doszedłeś do odpowiedzi.}
 
 \end{minipage}
 
@@ -747,68 +704,17 @@ $|BM| = |ML| = |LB| = 3{,}7\text{ m}$, a $|AM| = 4 \text{ m}$.
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 
-Floor i Tom wynajmują namiot imprezowy. Namiot ma 12 boków. Na zdjęciu widać namiot, a na rysunku
-płachtę namiotu rozłożoną płasko na ziemi.
-
 \vspace{5mm}
 
-\noindent
-\begin{minipage}[c]{0.48\textwidth}
-    \centering
-    \includegraphics[width=1\linewidth]{KB-0153-a-24-1-o-7.png}
-\end{minipage}\hfill 
-\begin{minipage}[c]{0.48\textwidth}
-    \centering
-\begin{tikzpicture}[scale=0.8]
-    % Promienie dla dwóch rodzajów wierzchołków (możesz je niezależnie modyfikować)
-    \def\Rext{3cm} % Promień dla wierzchołków B, D, F, H, J, L
-    \def\Rint{3.2cm} % Promień dla wierzchołków A, C, E, G, I, K (mniejszy lub inny)
-    
-    % Współrzędne wierzchołków (rozmieszczone co 30°)
-    % Nieparzyste (A, C, E, G, I, K) oraz parzyste (B, D, F, H, J, L)
-    \coordinate (A) at (-90:\Rint);
-    \coordinate (B) at (-60:\Rext);
-    \coordinate (C) at (-30:\Rint);
-    \coordinate (D) at (0:\Rext);
-    \coordinate (E) at (30:\Rint);
-    \coordinate (F) at (60:\Rext);
-    \coordinate (G) at (90:\Rint);
-    \coordinate (H) at (120:\Rext);
-    \coordinate (I) at (150:\Rint);
-    \coordinate (J) at (180:\Rext);
-    \coordinate (K) at (210:\Rint);
-    \coordinate (L) at (240:\Rext);
-    
-    % Środek wielokąta
-    \coordinate (M) at (0,0);
+\includegraphics[width=1\textwidth]{GT-0153-a-24-1-o-4.png}
 
-    % Wypełnienie wnętrza szarym kolorem
-    \fill[gray!30] (A) -- (B) -- (C) -- (D) -- (E) -- (F) -- (G) -- (H) -- (I) -- (J) -- (K) -- (L) -- cycle;
+Na ilustracji przedstawiono pięć wielościanów foremnych. 
 
-    % Rysowanie czarnych krawędzi zewnętrznych
-    \draw[thick] (A) -- (B) -- (C) -- (D) -- (E) -- (F) -- (G) -- (H) -- (I) -- (J) -- (K) -- (L) -- cycle;
+Wzór Eulera opisuje zależność między liczbą wierzchołków, krawędzi i ścian wielościanu: 
 
-    % Rysowanie wewnętrznych linii przerywanych (łączących wybrane wierzchołki: L-B-D-F-H-J)
-    % \draw[dashed, thick, black!70] (L) -- (B) -- (D) -- (F) -- (H) -- (J) -- cycle;
+$$W − K + S = 2$$
 
-    % Rysowanie punktów i etykiet
-    \foreach \pt/\pos in {A/below, B/below right, C/right, D/right, E/above right, F/above right, G/above, H/above left, I/left, J/left, K/below left, L/below left} {
-        \fill (\pt) circle (1.5pt);
-        \node[\pos] at (\pt) {$\pt$};
-    }
-
-    % Punkt M w środku i jego etykieta
-    \fill (M) circle (1.5pt);
-    \node[above right] at (M) {$M$};
-
-\end{tikzpicture}
-\end{minipage}
-
-
-\vspace{5mm}
-
-Po połączeniu punktów B, D, F, H, J i L otrzymuje się regularny sześciokąt (rysunek w arkuszu roboczym).
-
+Gdzie $W$ oznacza liczbę wierzchołków, $K$ — liczbę krawędzi, a $S$ — liczbę ścian.
 
 \end{minipage}
 
@@ -816,13 +722,12 @@ Po połączeniu punktów B, D, F, H, J i L otrzymuje się regularny sześciokąt
 
 \noindent
 \begin{minipage}[t]{0.10\textwidth}
-    \textbf{22} \textit{3 pkt}
+    \textbf{22} \textit{2 pkt}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 
-Pokaż obliczeniami, że $|MS|$ po zaokrągleniu wynosi 3,2 m
-
+Pokaż za pomocą obliczeń, że wzór ten jest prawdziwy dla sześcianu.
 
 \end{minipage} 
 
@@ -831,14 +736,107 @@ Pokaż obliczeniami, że $|MS|$ po zaokrągleniu wynosi 3,2 m
 
 \noindent
 \begin{minipage}[t]{0.10\textwidth}
-    \textbf{23} \textit{4 pkt}
+    \textbf{23} \textit{3 pkt}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 
-Tom chce zawiesić lampki wzdłuż krawędzi płachty namiotu. Ile metrów wynosi całkowity obwód
-płachty? Zapisz obliczenia.
+W załączniku znajduje się tabela z liczbą wierzchołków, krawędzi i ścian czterech wielościanów foremnych. \zadanie{Uzupełnij tabelę.}
 
 \end{minipage} 
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \phantom{to jest }
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\vspace{5mm}
+
+Objętości wielościanów foremnych można obliczyć za pomocą wzorów:
+
+$$\mathit{objętość\ sześcianu} = \mathit{krawędź}^3$$
+$$\mathit{objętość\ czworościanu} = 0{,}118 \cdot \mathit{krawędź}^3$$
+$$\mathit{objętość\ ośmiościanu} = 0{,}471 \cdot \mathit{krawędź}^3$$
+$$\mathit{objętość\ dwunastościanu} = 7{,}66 \cdot \mathit{krawędź}^3$$
+$$\mathit{objętość\ dwudziestościanu} = 2{,}18 \cdot \mathit{krawędź}^3$$
+Objętość jest podana w cm³, a $\mathit{krawędź}$ oznacza długość krawędzi w cm. Wykresy tych wzorów narysowano
+w układzie współrzędnych w załączniku.
+
+\end{minipage}
+
+
+<!-- zadanie 24 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{24} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Uzupełnij tabelę przy wykresach w załączniku.
+
+\end{minipage} 
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \phantom{to jest }
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+Dwunastościan foremny mieści się dokładnie w kuli. Promień kuli zależy od długości krawędzi
+dwunastościanu. Można go obliczyć ze wzoru: 
+
+$$\mathit{promień} = \frac{1}{4} \cdot \sqrt{3} \cdot (1 + \sqrt{5}) \cdot \mathit{krawędź}$$
+Promień kuli jest podany w cm, a $\mathit{krawędź}$ oznacza długość krawędzi dwunastościanu w cm.
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \vspace{0pt}
+    \includegraphics[width=\linewidth]{GT-0153-a-24-1-o-5.png}
+\end{minipage}
+
+\end{minipage}
+
+<!-- zadanie 25 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{25} \textit{1 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Dwunastościan ma krawędzie długości 6 cm. \zadanie{Pokaż, że promień kuli, w której się mieści, wynosi po zaokrągleniu 8,41 cm. Zapisz obliczenia.}
+
+
+\end{minipage} 
+
+<!-- zadanie 26 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{26} \textit{3 pkt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+Objętość dwunastościanu można obliczyć ze wzoru: 
+
+$$\mathit{objętość} = 7{,}66 \cdot \mathit{krawędź}^3$$
+
+Dwunastościan o krawędziach 6 cm mieści się dokładnie w plastikowej kuli o promieniu 8,41 cm. Objętość kuli jest większa od objętości dwunastościanu. \zadanie{Oblicz, o ile cm³ większa. Zapisz obliczenia.}
+
+\end{minipage} 
+
+
+
 
 

@@ -3,15 +3,8 @@ title: "BB-0153-a-24-1-c"
 format:
   pdf:
     pdf-engine: lualatex
-header-includes:
-  - \usepackage{tikz}
-  - \usetikzlibrary{shapes.geometric}
-  - \usepackage{amsmath}
-  - \usepackage{amssymb}
-  - \usepackage{titlesec}
-  - \titleformat{\section}{\normalfont\Large\bfseries\centering}{\thesection}{1em}{}
-  - \pagenumbering{gobble}
-  - \usepackage{wasysym}
+    include-in-header:
+      file: preamble.tex
 ---
 
 # Instrukcje

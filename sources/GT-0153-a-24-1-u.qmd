@@ -3,14 +3,8 @@ title: "GT-0153-a-24-1-u"
 format:
   pdf:
     pdf-engine: lualatex
-header-includes:
-  - \usepackage{tikz}
-  - \usetikzlibrary{calc}
-  - \usepackage{amsmath}
-  - \usepackage{amssymb}
-  - \usepackage{titlesec}
-  - \titleformat{\section}{\normalfont\Large\bfseries\centering}{\thesection}{1em}{}
-  - \pagenumbering{gobble}
+    include-in-header:
+      file: preamble.tex
 ---
 
 
@@ -24,10 +18,9 @@ header-includes:
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
-
 \vspace{5mm}
 \begin{center}
-    \includegraphics[width=\textwidth]{GT-0153-a-24-1-u-1.png}
+\includegraphics[width=0.9\textwidth]{GT-0153-a-24-1-u-1.png}
 \end{center}
 \end{minipage}
 
@@ -37,20 +30,39 @@ header-includes:
 
 \noindent
 \begin{minipage}[t]{0.10\textwidth}
-    \textbf{19}
+    \textbf{8, 9, 10, 11 i 12}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 \vspace{5mm}
 \begin{center}
-    \includegraphics[width=\textwidth]{GT-0153-a-24-1-u-2.png}
+    \includegraphics[width=0.8\textwidth]{GT-0153-a-24-1-u-2.png}
 \end{center}
-
 \end{minipage}
 
-# wielościany foremne
+# Wielościany foremne
 
 <!-- zadanie 23 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{23}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+\vspace{5mm}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+                 & $W$ & $K$ & $S$ \\ \hline
+czworościan      & 4   & 6   & 4\\ \hline
+ośmiościan       & 6   &     & 8 \\ \hline
+dwunastościan    &     & 30  & 12 \\ \hline
+dwudziestościan  & 12  & 30  &    \\ \hline
+\end{tabular}
+\end{center}
+\end{minipage}
+
 
 <!-- zadanie 24 -->
 
@@ -62,7 +74,17 @@ header-includes:
 \begin{minipage}[t]{0.9\textwidth}
 \vspace{5mm}
 \begin{center}
+\begin{tabular}{|l|c|}
+\hline
+\textbf{nazwa}   & \textbf{wykres}  \\ \hline
+czworościan      &  III  \\ \hline
+sześcian         &    \\ \hline
+ośmiościan       &    \\ \hline
+dwunastościan    &    \\ \hline
+dwudziestościan  &    \\ \hline
+\end{tabular}
+
+\vspace{5mm}
     \includegraphics[width=\textwidth]{GT-0153-a-24-1-u-3.png}
 \end{center}
-
 \end{minipage}
