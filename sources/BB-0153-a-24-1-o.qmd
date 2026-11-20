@@ -25,7 +25,7 @@ Egzamin trwa 90 minut.
     \phantom{to jest }
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.85\textwidth}
+\begin{minipage}[t]{0.9\textwidth}
 
 Widzisz okno wykonane techniką witrażową.
 

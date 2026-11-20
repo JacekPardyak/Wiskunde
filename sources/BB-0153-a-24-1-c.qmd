@@ -105,8 +105,8 @@ Jeżeli zdający popełnił błąd zapisu, który – jak można stwierdzić –
 
 \begin{itemize}
     \item Wysokość = 20 : 2 = 10 cm \hfill \textit{1 pkt}
-    \item Pole trójkąta = 30 × 10 : 2 = 150 cm² \hfill \textit{1 pkt}
-    \item Łączne pole = 2 × 150 = 300 cm² \hfill \textit{1 pkt}
+    \item Pole trójkąta = 30 · 10 : 2 = 150 cm² \hfill \textit{1 pkt}
+    \item Łączne pole = 2 · 150 = 300 cm² \hfill \textit{1 pkt}
 \end{itemize}
 
 
@@ -141,7 +141,7 @@ Jeżeli zdający popełnił błąd zapisu, który – jak można stwierdzić –
 
 \begin{itemize}
     \item 10 + 40 + 10 = 60 cm \hfill \textit{1 pkt}
-    \item 4 × 60 = 240 cm \hfill \textit{1 pkt}
+    \item 4 · 60 = 240 cm \hfill \textit{1 pkt}
     \item Odpowiedź: nie, Rachid nie ma wystarczającej ilości drewna \hfill \textit{1 pkt}
 \end{itemize}
 
@@ -178,7 +178,7 @@ Jeżeli zdający popełnił błąd zapisu, który – jak można stwierdzić –
 \begin{itemize}
     \item 28 m = 2800 cm \hfill \textit{1 pkt}
     \item 2800 : 80 = 35 \hfill \textit{1 pkt}
-    \item 35 × 2 = 70 dzieci \hfill \textit{1 pkt}
+    \item 35 · 2 = 70 dzieci \hfill \textit{1 pkt}
 \end{itemize}
 
 \end{minipage}
@@ -217,7 +217,7 @@ Jeżeli zdający popełnił błąd zapisu, który – jak można stwierdzić –
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 
-2 − 0,5 × 1,2 × 1,2 = 1,28 m
+2 − 0,5 · 1,2 · 1,2 = 1,28 m
 
 \end{minipage}
 
@@ -231,7 +231,7 @@ Jeżeli zdający popełnił błąd zapisu, który – jak można stwierdzić –
 \hfill
 \begin{minipage}[t]{0.9\textwidth}
 
-2 − 0,5 × 2 × 2 = 0 m
+2 − 0,5 · 2 · 2 = 0 m
 
 \end{minipage}
 
@@ -296,7 +296,7 @@ $\mathit{wysokość}$ (metry)  & $2{,}0$ & $1{,}92$ & $1{,}68$ & $1{,}28$ & $0{,
 
 \begin{itemize}
     \item Średnica osłony = 2 + 30 + 2 = 34 cm \hfill \textit{1 pkt}
-    \item Obwód koła = 3,14 × 34 = 106,76 cm \hfill \textit{1 pkt}
+    \item Obwód koła = 3,14 · 34 = 106,76 cm \hfill \textit{1 pkt}
     \item Odpowiedź: 107 cm \hfill \textit{1 pkt}
 \end{itemize}
 
@@ -313,9 +313,9 @@ $\mathit{wysokość}$ (metry)  & $2{,}0$ & $1{,}92$ & $1{,}68$ & $1{,}28$ & $0{,
 
 \begin{itemize}
     \item Promień = 30 : 2 = 15 cm \hfill \textit{1 pkt}
-    \item Pole koła = 3,14 × 15 × 15 = 706,5 cm² \hfill \textit{2 pkt}
+    \item Pole koła = 3,14 · 15 · 15 = 706,5 cm² \hfill \textit{2 pkt}
     \item 706,5 : 5 = 141,3 cm² \hfill \textit{1 pkt}
-    \item 141,3 × 3 = 424 cm² (lub 423,9 cm²) \hfill \textit{1 pkt}
+    \item 141,3 · 3 = 424 cm² (lub 423,9 cm²) \hfill \textit{1 pkt}
 \end{itemize}
 
 \end{minipage}

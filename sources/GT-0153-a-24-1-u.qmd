@@ -1,0 +1,68 @@
+---
+title: "GT-0153-a-24-1-u"
+format:
+  pdf:
+    pdf-engine: lualatex
+header-includes:
+  - \usepackage{tikz}
+  - \usetikzlibrary{calc}
+  - \usepackage{amsmath}
+  - \usepackage{amssymb}
+  - \usepackage{titlesec}
+  - \titleformat{\section}{\normalfont\Large\bfseries\centering}{\thesection}{1em}{}
+  - \pagenumbering{gobble}
+---
+
+
+# Oszczędzanie
+
+<!-- zadanie 2 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{2}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+
+\vspace{5mm}
+\begin{center}
+    \includegraphics[width=\textwidth]{GT-0153-a-24-1-u-1.png}
+\end{center}
+\end{minipage}
+
+# Harfa 
+
+<!-- zadanie 8, 9, 10, 11 oraz 12 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{19}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+\vspace{5mm}
+\begin{center}
+    \includegraphics[width=\textwidth]{GT-0153-a-24-1-u-2.png}
+\end{center}
+
+\end{minipage}
+
+# wielościany foremne
+
+<!-- zadanie 23 -->
+
+<!-- zadanie 24 -->
+
+\noindent
+\begin{minipage}[t]{0.10\textwidth}
+    \textbf{24}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.9\textwidth}
+\vspace{5mm}
+\begin{center}
+    \includegraphics[width=\textwidth]{GT-0153-a-24-1-u-3.png}
+\end{center}
+
+\end{minipage}
